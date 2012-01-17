@@ -1,7 +1,7 @@
 Sean Bromage
 1/16/12
 
-== InvolverTweets
+==InvolverTweets
 
 This Ruby on Rails application displays the 5 most recent tweets from any public Twitter account. To refresh the tweets, simply press the 'Reload' button.
 
