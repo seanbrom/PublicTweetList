@@ -1,8 +1,10 @@
 class HomeController < ApplicationController
 
   def set
+    #set the Twitter account name from the user's input
     user_name = params[:user]
     
+    #delete the current entries in the database
     @tweetList = Tweet.all
     if @tweetList != nil
       @tweetList.each do |tweet|
@@ -10,6 +12,7 @@ class HomeController < ApplicationController
       end
     end
     
+    #create new entries for the five most recent tweets on the user's timeline
     unless Tweet.exists?([])
       Tweet.create!({
         :from_user => user_name,
@@ -37,6 +40,7 @@ class HomeController < ApplicationController
       })
     end
     
+    #collect all the tweets in an array to be iterated over in the view
     @tweets = Tweet.all
   end
 
