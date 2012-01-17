@@ -1,0 +1,8 @@
+<h1>Latest Twitter Updates</h1>
+
+<%= form_tag (:controller => "home", :action => "set") do %>
+  <%= label_tag(:user, "Enter User Name:") %>
+  <%= text_field_tag(:user) %>
+  <%= submit_tag("Load") %>
+<% end %>
+</br>

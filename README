@@ -1,0 +1,12 @@
+Sean Bromage
+1/16/12
+
+== InvolverTweets
+
+This Ruby on Rails application displays the 5 most recent tweets from any public Twitter account. To refresh the tweets, simply press the 'Reload' button.
+
+An SQLite database is used to store and retrieve the individual tweets that are fetched using Twitter's API. The twitter gem is used for accessing API calls in ruby.
+
+In order to keep the interface simple and clutter free, only the Twitter username and tweet's text are displayed. When clicked, the username will take you to the user's Twitter site and URLs in the text itself are made clickable via an app helper.
+
+The next steps for an application like this would be to improve its performance by optimizing when and how often objects are added to and deleted from the database. Unit tests will also be helpful in ensuring the app behaves correctly/as expected as the code becomes more complex.
